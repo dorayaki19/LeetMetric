@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+:root {
+    --progress-degree:30%; /* Change this value to update the progress */
+}
+
+body{
+    background-color: rgb(183, 158, 182);
+    color:rgb(27, 24, 19);
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    background-color:rgb(171, 212, 209);
+    padding:2rem;
+    border-radius:1rem;
+    max-width: 600px;
+    width:50%;
+
+}
+h1{
+    font-size:2rem;
+}
+.user-container{
+    display:flex;
+    flex-direction: column;
+    gap:0.7rem;
+    justify-content: flex-start;
+}
+.user-input-container{
+    display:flex;
+    justify-content: space-between;
+}
+#user-input{
+    width:80%;
+    padding:0.4rem;
+    border-radius:5px;
+}
+#search-btn{
+    padding:0.4rem;
+    border-radius:5px;
+}
+.stats-container{
+    /* display:none; */
+}
+.circle{
+    background-color: rgb(183, 158, 182);
+    border-radius: 50%;
+    width:120px;
+    height:120px;
+    border:3px solid black;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    font-size: 1.2rem;
+    background: conic-gradient(white var(--progress-degree, 0%), rgb(183, 158, 182) 0%);
+}
+.progress{
+    display:flex;
+    gap:10px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
